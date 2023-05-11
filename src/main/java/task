@@ -1,0 +1,11 @@
+Proje: Mini Book Store
+       Online bir kitap market icin urun yonetim uygulamasi yapiniz.
+       Kitap markette kitap ve defter satisi olacak, ancek ileride yeni urun cesidi eklenebilir olmali.
+
+       Kitap ozellikleri: id, isim, birim fiyat, stok, yazar adi, yayinevi.
+       Defter ozellikleri: id, isim, birim fiyat, stok,marka, yaprak sayisi.
+
+       Kullanici ilgili kategorideki urunleri listeleyebilmeli
+       kullanici kategoriye gore urun ekleyebilmeli.
+       kullanici urunleri benzersiz numaralara gore silebilmeli.
+       Kullanici urunleri marka(kitap) veya yayinevine gore filtreleyip listeleyebilmeli.
