@@ -32,7 +32,7 @@ public class BookService implements ProductService{
             System.out.println("2-Kitap Ekle");
             System.out.println("3-Kitap Sil");
             System.out.println("4-Yayinevine Gore Filtrele");
-            System.out.println("0-Cikis");
+            System.out.println("0-Ana Menuye Geri Don");
             System.out.println("Seciminiz");
             choise=scan.nextInt();
             switch (choise){
@@ -116,9 +116,15 @@ public class BookService implements ProductService{
         }
 
     }
-//9- listedeki tum kitaplarin
+//9- listedeki tum kitaplarin yayinevine bak, filter ile ayni ise yazdir
     @Override
     public void filterProduct(String filter) {
+        for (Book book:this.bookList){
+            if(book.getPublisher().equals(filter)){//Penguin
+                System.out.printf("%-2s | %-20s | %-15s | %-10s | %-7s | %-5s \n",
+                        book.getId(),book.getName(),book.getAuthorName(),book.getPublisher(),book.getPrice(),book.getStock());
+            }
+        }
 
 
     }
