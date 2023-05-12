@@ -66,12 +66,13 @@ public class BookService implements ProductService{
 //6-booklari formatla yazdir
     @Override
     public void listProduct() {
-        System.out.println("-----------------------------------------------------------------");
-        System.out.printf("%-2s | %-20s | %-15s | %-10s | %-7s | %-5s \n","ID","Kitap Adi","Yazar Adi","Yayinevi","Birim Fiyat","Stock");
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.printf("%-2s | %-20s | %-15s | %-10s | %-12s | %-5s |\n","ID","Kitap Adi","Yazar Adi","Yayinevi","Birim Fiyat","Stock");
+        System.out.println("---------------------------------------------------------------------------------");
         for(Book book:this.bookList){
-            System.out.printf("%-2s | %-20s | %-15s | %-10s | %-7s | %-5s \n",
+            System.out.printf("%-2s | %-20s | %-15s | %-10s | %-12s | %-5s |\n",
                     book.getId(),book.getName(),book.getAuthorName(),book.getPublisher(),book.getPrice(),book.getStock());
-            System.out.println("-----------------------------------------------------------------");
+            System.out.println("---------------------------------------------------------------------------------");
         }
     }
 //7-kullanicidan alinan bilgilerle book olustur, listeye ekle
